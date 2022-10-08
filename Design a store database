@@ -1,0 +1,15 @@
+-- creating database of items for sale
+
+CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, category TEXT, price INTEGER, quantity INTEGER, days_to_ship INTEGER);
+
+INSERT INTO items VALUES
+(1, "Bike", "Vehicle", 100, 5, 7),
+(2, "Car", "Vehicle", 40000, 3, 30),
+(3, "Apple", "Food", 1, 200, 1),
+(4, "Banana", "Food", 1, 200, 1),
+(5, "Shoes", "Clothing", 200, 10, 2),
+(6, "Tshirt", "Clothing", 25, 50, 3),
+(7, "Belt", "Clothing", 15, 120, 4);
+
+-- order items by price
+SELECT * from items ORDER BY price
